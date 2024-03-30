@@ -8,4 +8,8 @@
             <property name="eclipselink.logging.level" value="FINE"/>
         </properties>
     </persistence-unit>
+    <persistence-unit name="discountPU" transaction-type="JTA">
+    <jta-data-source>jdbc/customer</jta-data-source>
+    <properties/>
+  </persistence-unit>
 </persistence>

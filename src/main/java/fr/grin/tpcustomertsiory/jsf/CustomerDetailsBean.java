@@ -5,11 +5,14 @@
 package fr.grin.tpcustomertsiory.jsf;
 
 import fr.grin.tpcustomertsiory.entity.Customer;
+import fr.grin.tpcustomertsiory.entity.Discount;
 import fr.grin.tpcustomertsiory.service.CustomerManager;
+import fr.grin.tpcustomertsiory.service.DiscountManager;
 import jakarta.inject.Named;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Backing bean pour la page customerDetails.xhtml.
@@ -25,6 +28,8 @@ public class CustomerDetailsBean implements Serializable {
 
     @Inject
     private CustomerManager customerManager;
+    @Inject
+    private DiscountManager discountManager;
 
     public int getIdCustomer() {
         return idCustomer;
@@ -62,4 +67,12 @@ public class CustomerDetailsBean implements Serializable {
         this.customer = customerManager.findById(idCustomer);
     }
 
+    /**
+     * Retourne la liste de tous les Discount.
+     *
+     * @return
+     */
+    public List<Discount> getDiscounts() {
+        return discountManager.getAllDiscounts();
+    }
 }
