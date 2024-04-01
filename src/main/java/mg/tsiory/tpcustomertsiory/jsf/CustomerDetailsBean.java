@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
  */
-package fr.grin.tpcustomertsiory.jsf;
+package mg.tsiory.tpcustomertsiory.jsf;
 
-import fr.grin.tpcustomertsiory.entity.Customer;
-import fr.grin.tpcustomertsiory.entity.Discount;
-import fr.grin.tpcustomertsiory.service.CustomerManager;
-import fr.grin.tpcustomertsiory.service.DiscountManager;
+import mg.tsiory.tpcustomertsiory.entity.Customer;
+import mg.tsiory.tpcustomertsiory.entity.Discount;
+import mg.tsiory.tpcustomertsiory.service.CustomerManager;
+import mg.tsiory.tpcustomertsiory.service.DiscountManager;
 import jakarta.inject.Named;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;

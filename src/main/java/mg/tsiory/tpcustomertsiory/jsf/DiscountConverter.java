@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package fr.grin.tpcustomertsiory.jsf;
+package mg.tsiory.tpcustomertsiory.jsf;
 
-import fr.grin.tpcustomertsiory.entity.Discount;
-import fr.grin.tpcustomertsiory.service.DiscountManager;
+import mg.tsiory.tpcustomertsiory.entity.Discount;
+import mg.tsiory.tpcustomertsiory.service.DiscountManager;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.convert.Converter;
